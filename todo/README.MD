@@ -1,6 +1,3 @@
-from pathlib import Path
-
-
 # 📝 ToDo App (FastAPI + SQLAlchemy + Jinja2)
 
 Це простий веб-застосунок для управління завданнями (ToDo), створений на базі **FastAPI**, **SQLAlchemy** та **Jinja2 Templates**. Ви можете додавати, відмічати як виконані, та видаляти задачі.
@@ -9,11 +6,11 @@ from pathlib import Path
 
 ## 🚀 Стек технологій
 
-- **FastAPI** – асинхронний фреймворк для створення API
-- **SQLAlchemy** – ORM для взаємодії з базою даних
-- **SQLite** – легка файлова база даних
-- **Jinja2** – шаблонізатор для HTML-інтерфейсу
-- **Starlette** – для шаблонів, редіректів, відповіді на запити
+- **FastAPI** – асинхронний фреймворк для створення API  
+- **SQLAlchemy** – ORM для взаємодії з базою даних  
+- **SQLite** – легка файлова база даних  
+- **Jinja2** – шаблонізатор для HTML-інтерфейсу  
+- **Starlette** – для шаблонів, редіректів, відповіді на запити  
 
 ---
 
@@ -24,28 +21,25 @@ from pathlib import Path
 ```bash
 git clone https://github.com/your_username/fastapi-todo.git
 cd fastapi-todo
+```
 
+### 2. Встановити залежності:
 pip install -r requirements.txt
 
 
+### 3. Запуск серверу:
 uvicorn todo.main:app --reload
 
 
-🗂 Структура проєкту
-
-D:.
-├───.idea
-│   └───inspectionProfiles       
-├───todo
-│   ├───database
-│   │   ├───DB
-│   │   └───__pycache__
-│   ├───static
-│   │   └───css
-│   ├───templates
-│   │   └───todo
-│   ├───todo
-│   │   └───database
-│   │       └───DB
-│   └───__pycache__
+todo/
+├── static/                 # CSS, JS, зображення
+├── templates/              # HTML-шаблони (Jinja2)
+│   └── todo/index.html
+├── __init__.py
+├── main.py                 # Точка входу
+├── models.py               # SQLAlchemy-моделі
+├── routes.py               # FastAPI маршрути
+├── config.py               # Налаштування
+└── database/
+    ├── base.py             # Підключення до бази
 
