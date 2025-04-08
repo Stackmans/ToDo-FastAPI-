@@ -30,16 +30,3 @@ pip install -r requirements.txt
 ### 3. Запуск серверу:
 uvicorn todo.main:app --reload
 
-
-todo/
-├── static/                 # CSS, JS, зображення
-├── templates/              # HTML-шаблони (Jinja2)
-│   └── todo/index.html
-├── __init__.py
-├── main.py                 # Точка входу
-├── models.py               # SQLAlchemy-моделі
-├── routes.py               # FastAPI маршрути
-├── config.py               # Налаштування
-└── database/
-    ├── base.py             # Підключення до бази
-
