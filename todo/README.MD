@@ -20,7 +20,7 @@ md ToDoFastAPI & cd ToDoFastAPI
 
 python -m venv venv
 venv\Scripts\activate    # для Windows
-# або
+# абo
 source venv/bin/activate # для Linux/macOS
 
 # 3. Створюємо структуру проєкту
